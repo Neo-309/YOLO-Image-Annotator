@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YOLO Image Annotator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>YOLO Image Annotator</h1>
+      <div class="row">
+        <div class="panel">
+          <label>Source directory (server path)</label>
+          <input id="source_dir" type="text" placeholder="C:\\path\\to\\images" />
+          <label>Destination directory (server path)</label>
+          <input id="dest_dir" type="text" placeholder="C:\\path\\to\\annotations" />
+          <button id="btn_set_dirs">Set directories</button>
+          <hr/>
+          <label>Project name</label>
+          <input id="project_name" type="text" placeholder="my_project" />
+          <div class="project-row">
+            <button id="btn_save_project">Save Project</button>
+            <button id="btn_list_projects">List Projects</button>
+            <select id="projects_select"></select>
+            <button id="btn_load_project">Load</button>
+          </div>
+          <hr/>
+          <label>Class id (integer)</label>
+          <input id="class_id" type="number" value="0" />
+          <div class="nav-row">
+            <button id="btn_prev">Prev</button>
+            <button id="btn_next">Next</button>
+            <button id="btn_save">Save Annotation</button>
+          </div>
+          <div class="nav-row">
+            <button id="btn_rotate_left">Rotate ⟲</button>
+            <button id="btn_rotate_right">Rotate ⟳</button>
+          </div>
+          <div class="nav-row">
+            <label>Pan X</label>
+            <input id="pan_x_slider" type="range" min="-500" max="500" value="0" style="width:100%"/>
+          </div>
+          <div class="nav-row">
+            <label>Pan Y</label>
+            <input id="pan_y_slider" type="range" min="-500" max="500" value="0" style="width:100%"/>
+          </div>
+          <div class="nav-row">
+            <button id="btn_undo">Undo (Ctrl+Z)</button>
+            <button id="btn_redo">Redo (Ctrl+Y)</button>
+          </div>
+          <div class="nav-row">
+            <button id="btn_delete">Delete Selected</button>
+          </div>
+          <div id="status"></div>
+        </div>
+        <div class="viewer">
+          <div class="image-wrap">
+            <img id="image" crossorigin="anonymous" />
+            <canvas id="canvas"></canvas>
+          </div>
+          <div id="image_info"></div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

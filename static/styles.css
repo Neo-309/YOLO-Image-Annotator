@@ -1,0 +1,13 @@
+body{font-family:Segoe UI, Arial;margin:12px;background:#f6f7fb}
+h1{margin:0 0 12px}
+.row{display:flex;gap:12px}
+.panel{width:340px;background:#fff;padding:12px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.viewer{flex:1}
+.image-wrap{position:relative;border:1px solid #ddd;background:#222;min-height:400px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#image{max-width:100%;max-height:75vh;display:block}
+#canvas{position:absolute;left:0;top:0}
+input[type=text], input[type=number], select{width:100%;padding:6px;margin:6px 0;border:1px solid #ccc;border-radius:4px}
+button{padding:8px 10px;margin:6px 4px;border-radius:4px;border:1px solid #888;background:#fff;cursor:pointer}
+.nav-row{display:flex;gap:8px}
+.project-row{display:flex;gap:6px;align-items:center}
+#status{margin-top:8px;color:#333}
