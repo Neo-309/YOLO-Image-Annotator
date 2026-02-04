@@ -31,5 +31,7 @@ Usage notes
 - left/right arrows or a/d button are shortcuts for prev/next image actions.
 - Ctrl+z and Ctrl+y are shortcuts for undo/redo actions.
 
-Development notes
+# Development notes
+
 If you have suggestions or find issues, please open an issue or a pull request on GitHub.
+
